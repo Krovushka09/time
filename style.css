@@ -1,0 +1,72 @@
+.timer {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.clock__block {
+    position: relative;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 25%;
+    background-color: rgb(233, 233, 233);
+}
+
+.clock__numbers {
+    line-height: 180px;
+    font-size: 4rem;
+}
+
+.clock__label {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.control {
+    height: 160px;
+    width: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #000;
+}
+
+.control__button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 90%;
+    background-color: #fff;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.history__block-info {
+    width: 50px;
+    height: 24px;
+    border: 1px solid #000;
+    margin: 5px;
+}

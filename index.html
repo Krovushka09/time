@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TTC</title>
+</head>
+<body>
+    <div class="timer">
+        <div class="clock">
+            <div class="clock__block">
+                <span class="clock__label">часы</span>
+                <span class="clock__numbers hours">00</span>
+            </div>
+            <div class="clock__block">
+                <span class="clock__label">минуты</span>
+                <span class="clock__numbers minutes">00</span>
+            </div>
+            <div class="clock__block">
+                <span class="clock__label">секунды</span>
+                <span class="clock__numbers seconds">00</span>
+            </div>
+        </div>
+        <div class="control">
+            <button class="control__button start"></button>
+            <button class="control__button pause"></button>
+            <button class="control__button stop"></button>
+        </div>
+        <div class="section">
+            <label>Тема <input class="section__label" type="text"></label>
+            <button class="section__add-button">Добавить</button>
+        </div>
+    </div>
+    <div class="history">
+        <span>Здесь отображаются все прошлые промежутки текущей сессии</span>
+        <div><hr></div>
+    </div>
+    <script type="module" src="timer.js"></script>
+    <script type="module" src="dbFunction.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>
